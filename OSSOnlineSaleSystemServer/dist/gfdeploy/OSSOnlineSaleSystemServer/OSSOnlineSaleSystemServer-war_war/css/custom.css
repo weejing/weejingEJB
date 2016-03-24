@@ -1,0 +1,459 @@
+body{
+    padding-top:50px;
+    padding-left:200px;
+    background-color:#FFFFFF;  
+    overflow: hidden;
+    overflow-y: scroll;   
+}
+
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h5,h6{
+    font-family: 'oswald, sans-serif';
+    color:#EBE3E0;
+}
+
+h4{
+ font-family: 'oswald, sans-serif';
+ color:#999999;
+}
+
+h3{
+   font-family: 'oswald, sans-serif';
+   color:#FFFFFF;
+}
+
+.bg-grey{
+    background-color: #f9f9f9;
+}
+
+.thumbnail{
+    overflow: hidden;
+}
+
+.navbar-default{
+    background-color:#E3D6C6;
+    border-color:#FFFFFF;
+    color:#FFFFFF;
+}
+
+.navbar-inverse{
+    background-color:#E3D6C6;
+    border-color:#FFFFFF;
+    color:#FFFFFF;
+}
+
+.navbar-default .navbar-brand,
+navbar-default .navbar-nav >li>a{
+    color: #FFFFFF;
+}
+
+.navbar-default
+
+
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #EDD5D1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 100px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:150px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 150px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+    
+}
+
+/* container styles */
+
+.products {
+        background-color: #917C85;
+        height: 200px;
+        width: 25%;
+        outline:solid;
+        outline-width: thin;
+        position: relative;
+        right: 2.5%;
+        left: 2%;
+        top: 2.5%;
+        bottom: 2.5%;
+        box-sizing: border-box;
+        float: left;
+        margin: 1%;
+    }
+.grid {
+        background-color: white;
+        height: 55%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    
+
+ /* payment form styles */
+ 
+.credit-card-div  span {
+    padding-top:10px;
+        }
+.credit-card-div img {
+    padding-top:30px;
+}
+.credit-card-div .small-font {
+    font-size:9px;
+}
+.credit-card-div .pad-adjust {
+    padding-top:10px; 
+}
+
+
+/* table design
+*/
+
+.features-table
+{
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-shadow: 0 1px 0 #fff;
+  color: #2a2a2a;
+  background: #fafafa;  
+  background-image: -moz-linear-gradient(top, #fff, #eaeaea, #fff); /* Firefox 3.6 */
+  background-image: -webkit-gradient(linear,center bottom,center top,from(#fff),color-stop(0.5, #eaeaea),to(#fff)); 
+}
+
+.features-table td
+{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  border-bottom: 1px solid #cdcdcd;
+  box-shadow: 0 1px 0 white;
+  -moz-box-shadow: 0 1px 0 white;
+  -webkit-box-shadow: 0 1px 0 white;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/*Body*/
+.features-table tbody td
+{
+  text-align: center;
+  font: normal 12px Verdana, Arial, Helvetica;
+  width: 150px;
+}
+
+.features-table tbody td:first-child
+{
+  width: auto;
+  text-align: left;
+}
+
+.features-table td:nth-child(2), .features-table td:nth-child(3)
+{
+  background: #efefef;
+  background: rgba(144,144,144,0.15);
+  border-right: 1px solid white;
+}
+
+
+.features-table td:nth-child(4), .features-table td:nth-child(5), .fectures-table td:nth-child(6)
+{
+  background: #e7f3d4;  
+  background: rgba(184,243,85,0.3);
+}
+
+/*Header*/
+.features-table thead td
+{
+  font: bold 1.3em 'trebuchet MS', 'Lucida Sans', Arial;  
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-topleft: 10px; 
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top: 1px solid #eaeaea; 
+}
+
+.features-table thead td:first-child
+{
+  border-top: none;
+}
+
+/* template for forms */
+
+.main-content{
+    margin-bottom: 75px;
+}
+
+.form-basic{
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color:  #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+
+.form-basic .form-row{
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.form-basic .form-title-row{
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+/* The form title */
+
+.form-basic h1{
+    display: inline-block;
+    box-sizing: border-box;
+    color:  #4c565e;
+    font-size: 24px;
+    padding: 0 10px 15px;
+    border-bottom: 2px solid #6caee0;
+    margin: 0;
+}
+
+.form-basic .form-row > label span{
+    display: inline-block;
+    box-sizing: border-box;
+    color: #5F5F5F;
+    width: 180px;
+    text-align: right;
+    vertical-align: top;
+    padding: 12px 25px;
+}
+
+.form-basic input{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-basic input[type=radio],
+.form-basic input[type=checkbox]{
+    box-shadow: none;
+    width: auto;
+}
+
+
+.form-basic input[type=checkbox]{
+    margin-top: 13px;
+}
+
+.form-basic select{
+    background-color: #ffffff;
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    max-width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 8px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-basic textarea{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    height: 80px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    font: normal 13px sans-serif;
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    resize: vertical;
+}
+
+.form-basic .form-radio-buttons{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-basic .form-radio-buttons > div{
+    margin-top: 10px;
+}
+
+.form-basic .form-radio-buttons label span{
+    margin-left: 8px;
+    color: #5f5f5f;
+    font-weight: normal;
+}
+
+.form-basic .form-radio-buttons input{
+    width: auto;
+}
+
+.form-basic button{
+    display: block;
+    border-radius: 2px;
+    background-color:  #6caee0;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+}
+
+/*	Making the form responsive. Remove this media query
+    if you don't need the form to work on mobile devices. */
+
+@media (max-width: 600px) {
+
+    .form-basic{
+        padding: 30px;
+        max-width: 480px;
+    }
+
+    .form-basic .form-row{
+        max-width: 300px;
+        margin: 25px auto;
+        text-align: left;
+    }
+
+    .form-basic .form-title-row{
+        margin-bottom: 50px;
+    }
+
+    .form-basic .form-row > label span{
+        display: block;
+        text-align: left;
+        padding: 0 0 15px;
+    }
+
+    .form-basic select{
+        width: 240px;
+    }
+
+    .form-basic input[type=checkbox]{
+        margin-top:0;
+    }
+
+    .form-basic .form-radio-buttons > div{
+        margin: 0 0 10px;
+    }
+
+    .form-basic button{
+        margin: 0;
+    }
+
+}
+

@@ -25,8 +25,11 @@ import javax.persistence.PersistenceContext;
  * @author WeeJing
  */
 @MessageDriven(mappedName = "jms/Queue", activationConfig = {
-    @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue")
-})
+    @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
+    @ActivationConfigProperty(propertyName = "useJNDI", propertyValue = "true"),
+    @ActivationConfigProperty(propertyName = "destination", propertyValue = "java:/jboss/test"),
+    @ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge")})
+
 public class RequestMessageBean implements MessageListener {
     @PersistenceContext()
     EntityManager em;

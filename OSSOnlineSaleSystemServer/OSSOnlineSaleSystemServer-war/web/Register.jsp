@@ -15,7 +15,7 @@
     <body>
             
      <div class ="main-content">
-        <form action ="login" class="form-basic" method = "GET">
+        <form action ="home" class="form-basic" method = "GET">
             
             <div class ="form-title-row"> 
                 <h1> Register </h1>

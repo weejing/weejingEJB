@@ -48,7 +48,6 @@ public class OssManagerBean implements OssManagerBeanRemote {
     public boolean checkUser(String userName)
     {
         userEntity=em.find(UserEntity.class, userName);
-        System.out.println("i have checked:"+ userEntity.getPassword());
         if(userEntity==null)
             return false;
           
@@ -644,9 +643,12 @@ public class OssManagerBean implements OssManagerBeanRemote {
     @Override
     public ArrayList deleteFromShoppingCart(long prodId)
     {
-        for(int count=0; count < listOfCartItems.size(); count++)
+        for(int count=1; count < listOfCartItems.size(); count++)
         {
+            System.out.println("what is this: " + listOfCartItems.get(count));
             Vector orderLine = (Vector)listOfCartItems.get(count);
+            
+     
             long id = (long)orderLine.get(5);
             
             if(id == prodId)
